@@ -1,0 +1,25 @@
+apiVersion: v2
+appVersion: 1.16.0
+dependencies:
+- name: common
+  repository: '@bitnami'
+  tags:
+  - bitnami-common
+  version: 1.x.x
+- condition: mysql.enabled
+  name: mysql
+  repository: '@bitnami'
+  version: x.x.x
+- condition: cronjobs.enabled
+  name: cronjobs
+  repository: '@mnmcharts'
+  version: x.x.x
+description: A Helm chart for Kubernetes
+maintainers:
+- email: kemalettin@mnm.com.tr
+  name: Kemalettin Yesilkaya
+  url: https://www.mnm.com.tr/
+name: wordpress
+type: application
+version: 0.1.0
+
