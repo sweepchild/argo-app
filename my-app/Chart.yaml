@@ -2,17 +2,17 @@ apiVersion: v2
 appVersion: 1.16.0
 dependencies:
 - name: common
-  repository: '@bitnami'
+  repository: https://charts.bitnami.com/bitnami
   tags:
   - bitnami-common
   version: 1.x.x
 - condition: mysql.enabled
   name: mysql
-  repository: '@bitnami'
+  repository: https://charts.bitnami.com/bitnami
   version: x.x.x
 - condition: cronjobs.enabled
   name: cronjobs
-  repository: '@mnmcharts'
+  repository: https://mnmcharts.mnmedya.com
   version: x.x.x
 description: A Helm chart for Kubernetes
 maintainers:
