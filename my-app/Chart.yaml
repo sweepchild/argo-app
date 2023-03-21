@@ -1,11 +1,17 @@
 apiVersion: v2
 appVersion: 1.16.0
+name: wordpress
+type: application
+version: 0.1.0
 dependencies:
 - name: common
   repository: https://charts.bitnami.com/bitnami
   tags:
   - bitnami-common
   version: 1.x.x
+- name: wordpress
+  repository: https://charts.bitnami.com/bitnami
+  version: x.x.x
 - condition: mysql.enabled
   name: mysql
   repository: https://charts.bitnami.com/bitnami
@@ -15,7 +21,3 @@ maintainers:
 - email: kemalettin@mnm.com.tr
   name: Kemalettin Yesilkaya
   url: https://www.mnm.com.tr/
-name: wordpress
-type: application
-version: 0.1.0
-
